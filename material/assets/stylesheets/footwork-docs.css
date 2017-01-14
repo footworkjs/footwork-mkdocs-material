@@ -1,0 +1,109 @@
+.md-icon, .doc-root::before {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  white-space: nowrap;
+  speak: none;
+  word-wrap: normal;
+  direction: ltr; }
+  .doc-root::before {
+    display: inline-block;
+    margin: 0.4rem;
+    padding: 0.8rem;
+    font-size: 2.4rem;
+    cursor: pointer; }
+
+.md-icon--arrow-back::before {
+  content: "arrow_back"; }
+
+.md-icon--arrow-forward::before {
+  content: "arrow_forward"; }
+
+.md-icon--menu::before {
+  content: "menu"; }
+
+.md-icon--search::before {
+  content: "search"; }
+
+.md-icon--home::before {
+  content: "school"; }
+
+button, .button {
+  background: #1384ee;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 90%; }
+  button:hover, .button:hover {
+    background: #439df1; }
+  button:active, .button:active {
+    background: #1384ee;
+    box-shadow: 0 1px 3px -1px black inset; }
+
+nav .home-link {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0; }
+
+nav img.logo {
+  height: 3rem;
+  position: relative;
+  top: 0.8rem; }
+
+.doc-root {
+  display: block;
+  float: left;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+  margin-top: 0.7rem;
+  line-height: 20px; }
+  .doc-root::before {
+    content: "arrow_back";
+    padding: 0;
+    margin: 0 0.6rem 0 0;
+    font-size: 20px;
+    float: left; }
+
+.md-nav__source {
+  margin-bottom: 5px; }
+
+.name-version {
+  font-size: 1.5rem; }
+  .name-version span {
+    font-weight: normal; }
+
+.md-source__facts {
+  -webkit-animation: none !important;
+          animation: none !important; }
+  .md-source__facts > * {
+    -webkit-animation: none !important;
+            animation: none !important; }
+
+.md-nav__list {
+  clear: left; }
+
+p img {
+  max-width: 100%; }
+
+img[alt="FootworkJS"] {
+  height: 75px;
+  max-width: 100%; }
+
+@media only screen and (max-width: 76.1875em) {
+  .doc-root {
+    margin: 0;
+    padding: 0.7rem 1.6rem;
+    border-radius: 0;
+    background: rgba(15, 105, 189, 0.9675); }
+  .doc-root:hover {
+    background: rgba(15, 105, 189, 0.9675); }
+  .doc-root:hover span, .doc-root:hover::before {
+    opacity: 0.7;
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s; }
+  .name-version span {
+    font-weight: bold; } }

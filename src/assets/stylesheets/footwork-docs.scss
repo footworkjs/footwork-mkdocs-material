@@ -1,0 +1,145 @@
+$codeBackground: #eee;
+$menuActiveColor: #000;
+
+@mixin clearblock() {
+  display: block;
+
+  &:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+}
+
+@function text-color($color) {
+  @if (lightness($color) > 70) {
+    @return #000000; // Lighter backgorund, return dark color
+  } @else {
+    @return #ffffff; // Darker background, return light color
+  }
+}
+
+@import "modular-scale";
+@import "material-color";
+@import "material-shadows";
+
+// ----------------------------------------------------------------------------
+// Local imports
+// ----------------------------------------------------------------------------
+
+
+@import "helpers/break";
+@import "helpers/px2em";
+@import "config";
+@import "base/icons";
+
+$link-color: blue;
+$noteBackground: white;
+$refBlockMargin: 24px;
+$tagColor: black;
+
+$buttonColor: #1384ee;
+button, .button{
+  background: $buttonColor;
+  color: text-color($buttonColor);
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 90%;
+
+  &:hover {
+    background: lighten($buttonColor, 10%);
+  }
+  &:active {
+    background: $buttonColor;
+    box-shadow: 0 1px 3px -1px black inset;
+  }
+}
+
+nav {
+  .home-link {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  img.logo {
+    height: 3rem;
+    position: relative;
+    top: 0.8rem;
+  }
+}
+
+.doc-root {
+  display: block;
+  float: left;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+  margin-top: 0.7rem;
+  line-height: 20px;
+
+  &::before {
+    @extend %md-icon, %md-icon__button;
+    content: "arrow_back";
+    padding: 0;
+    margin: 0 0.6rem 0 0;
+    font-size: 20px;
+    float: left;
+  }
+
+  @include break-to-device(tablet) {
+    margin: 0;
+    padding: 0.7rem 1.6rem;
+    border-radius: 0;
+    background: rgba(15, 105, 189, 0.9675);
+
+    &:hover {
+      span, &::before {
+        opacity: 0.7;
+        transition: opacity 0.25s;
+      }
+
+      background: rgba(15, 105, 189, 0.9675);
+    }
+  }
+}
+
+.md-nav__source {
+  margin-bottom: 5px;
+}
+
+.name-version {
+  font-size: 1.5rem;
+  span {
+    font-weight: normal;
+  }
+
+  @include break-to-device(tablet) {
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+.md-source__facts {
+  animation: none !important;
+  & > * {
+    animation: none !important;
+  }
+}
+
+.md-nav__list {
+  clear: left;
+}
+
+p img {
+  max-width: 100%;
+}
+
+img[alt="FootworkJS"] {
+  height: 75px;
+  max-width: 100%;
+}
