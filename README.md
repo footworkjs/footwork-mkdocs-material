@@ -39,6 +39,14 @@ theme: 'material'
 For detailed installation instructions and a demo, visit
 http://squidfunk.github.io/mkdocs-material/
 
+## Building From Source
+
+You will need to make sure *pymdown-extensions* is installed:
+
+``` sh
+pip install pymdown-extensions
+```
+
 ## License
 
 **MIT License**

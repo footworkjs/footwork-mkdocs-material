@@ -45,7 +45,7 @@ const config = {
 const args = yargs
   .default("clean",      false)        /* Clean before build */
   .default("karma",      true)         /* Karma watchdog */
-  .default("lint",       true)         /* Lint sources */
+  .default("lint",       false)         /* Lint sources */
   .default("mkdocs",     true)         /* MkDocs watchdog */
   .default("optimize",   false)        /* Optimize sources */
   .default("revision",   false)        /* Revision assets */
