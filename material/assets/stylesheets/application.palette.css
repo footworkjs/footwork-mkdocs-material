@@ -3,8 +3,8 @@ button[data-md-color-accent] {
   width: 13rem;
   margin-bottom: 0.4rem;
   padding: 2.4rem 0.8rem 0.4rem;
-  -webkit-transition: background-color 0.25s, opacity 0.25s;
-  transition: background-color 0.25s, opacity 0.25s;
+  -webkit-transition: background-color 0.25s, opacity 0.25s;
+  transition: background-color 0.25s, opacity 0.25s;
   border-radius: 0.2rem;
   color: white;
   font-size: 1.28rem;
@@ -67,17 +67,17 @@ button[data-md-color-primary="deep-purple"] {
   color: #7e57c2; }
 
 button[data-md-color-primary="indigo"] {
-  background-color: #1384ee; }
+  background-color: #e15545; }
 
 [data-md-color-primary="indigo"] .md-typeset a {
-  color: #1384ee; }
+  color: #e15545; }
 
 [data-md-color-primary="indigo"] .md-header {
-  background-color: #1384ee; }
+  background-color: #e15545; }
 
 [data-md-color-primary="indigo"] .md-nav__link:active,
 [data-md-color-primary="indigo"] .md-nav__link--active {
-  color: #1384ee; }
+  color: #e15545; }
 
 button[data-md-color-primary="blue"] {
   background-color: #2196f3; }
@@ -783,7 +783,7 @@ button[data-md-color-accent="deep-orange"] {
   [data-md-color-primary="deep-purple"] .md-nav__source {
     background-color: rgba(100, 69, 154, 0.9675); }
   [data-md-color-primary="indigo"] .md-nav__source {
-    background-color: rgba(15, 105, 189, 0.9675); }
+    background-color: rgba(179, 68, 55, 0.9675); }
   [data-md-color-primary="blue"] .md-nav__source {
     background-color: rgba(26, 119, 193, 0.9675); }
   [data-md-color-primary="light-blue"] .md-nav__source {
@@ -823,7 +823,7 @@ button[data-md-color-accent="deep-orange"] {
   html [data-md-color-primary="deep-purple"] .md-nav--primary .md-nav__title--site {
     background-color: #7e57c2; }
   html [data-md-color-primary="indigo"] .md-nav--primary .md-nav__title--site {
-    background-color: #1384ee; }
+    background-color: #e15545; }
   html [data-md-color-primary="blue"] .md-nav--primary .md-nav__title--site {
     background-color: #2196f3; }
   html [data-md-color-primary="light-blue"] .md-nav--primary .md-nav__title--site {
@@ -863,7 +863,7 @@ button[data-md-color-accent="deep-orange"] {
   [data-md-color-primary="deep-purple"] .md-nav--secondary {
     border-left: 0.4rem solid #7e57c2; }
   [data-md-color-primary="indigo"] .md-nav--secondary {
-    border-left: 0.4rem solid #1384ee; }
+    border-left: 0.4rem solid #e15545; }
   [data-md-color-primary="blue"] .md-nav--secondary {
     border-left: 0.4rem solid #2196f3; }
   [data-md-color-primary="light-blue"] .md-nav--secondary {

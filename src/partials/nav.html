@@ -22,7 +22,7 @@
 
 <!-- Main navigation -->
 <nav class="md-nav md-nav--primary">
-  <label class="md-nav__title name-version" for="drawer">{{ config.site_name }} <span>v{{ config.extra.version }}</span></label>
+  <label class="md-nav__title name-version" for="drawer">{{ config.site_name }} <version-display params="lib: 'footwork'"></version-display></label>
   {% if config.repo_url %}
     <div class="md-nav__source">
       {% include "partials/source.html" %}

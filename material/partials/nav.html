@@ -1,1 +1,15 @@
-<nav class="md-nav md-nav--primary">  <label class="md-nav__title name-version" for="drawer">{{ config.site_name }} <span>v{{ config.extra.version }}</span></label>  {% if config.repo_url %}    <div class="md-nav__source">      {% include "partials/source.html" %}    </div>  {% endif %}  <a href="http://docs.footworkjs.com" class="doc-root button"><span>Go to version listing</span></a>  <ul class="md-nav__list" data-md-scrollfix>    {% for nav_item in nav %}      {% set path = "nav-" + loop.index | string %}      {% include "partials/nav-item.html" %}    {% endfor %}  </ul></nav>
+<nav class="md-nav md-nav--primary">
+  <label class="md-nav__title name-version" for="drawer">{{ config.site_name }} <version-display params="lib: 'footwork'"></version-display></label>
+  {% if config.repo_url %}
+    <div class="md-nav__source">
+      {% include "partials/source.html" %}
+    </div>
+  {% endif %}
+  <a href="http://docs.footworkjs.com" class="doc-root button"><span>Go to version listing</span></a>
+  <ul class="md-nav__list" data-md-scrollfix>
+    {% for nav_item in nav %}
+      {% set path = "nav-" + loop.index | string %}
+      {% include "partials/nav-item.html" %}
+    {% endfor %}
+  </ul>
+</nav>
